@@ -4,6 +4,7 @@
 
 def get_list_info(lst):
     # Здесь пишем код
+    min_elem =
     return min_elem, max_elem, sum_list, average
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
