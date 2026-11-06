@@ -5,7 +5,17 @@
 # Например 1, 1, 1 --> "Равносторонний"
 
 def which_triangle(a, b, c):
-    # Здесь нужно написать код
+    # Здесь нужно написать
+    if a <= 0 or b <= 0 or c <= 0:
+        type_triangle = "Не треугольник"
+    elif a + b <= c or a + c <= b or b + c <= a:
+        type_triangle = "Не треугольник"
+    elif a == b == c:
+        type_triangle = "Равносторонний"
+    elif a == b or a == c or b == c:
+        type_triangle = "Равнобедренный"
+    else:
+        type_triangle = "Обычный"
     return type_triangle
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
